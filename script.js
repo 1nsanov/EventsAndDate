@@ -20,28 +20,11 @@ function Accept() {
 }
 
 function ChangeResult() {
-	var result = document.getElementById('FieldChange').value
-	document.getElementById('ChangeResult').innerHTML = 'Результат: ' + result
+	document.getElementById('ChangeResult').innerHTML = 'Результат: ' + document.getElementById('FieldChange').value
 }
 
 function ChangeSizeImage() {
-	switch (parseInt(document.getElementById('Size').value)) {
-		case 100:
-			SetSize(100);
-			break;
-		case 50:
-			SetSize(50);
-			break;
-		case 33:
-			SetSize(33);
-			break;
-		case 25:
-			SetSize(25);
-			break;
-		case 10:
-			SetSize(10);
-			break;
-	}
+	SetSize(parseInt(document.getElementById('Size').value))
 }
 
 
