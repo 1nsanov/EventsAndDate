@@ -11,23 +11,27 @@
   <body>
     <h1>Задание 1</h1>
     <input id="InputDate" type="date" size="10" placeholder="дд.мм.гггг" />
-    <button onclick="FindDaysBeforeHB()">Узнать время до своего ДР</button>
+    <button id="buttons" onclick="FindDaysBeforeHB()">
+      Сколько дней до моего Дня Рождения?
+    </button>
 
     <h1>Задание 2</h1>
-    <input id="FieldInput" type="text" size="30" />
+    <input id="FieldInput" type="text" size="31" />
     <br />
-    <button onclick="BlockInput()">Заблокировать</button>
-    <button onclick="UnblockInput()">Разблокировать</button>
+    <button id="buttons" onclick="BlockInput()">Заблокировать</button>
+    <button id="buttons" onclick="UnblockInput()">Разблокировать</button>
 
     <h1>Задание 3</h1>
-    Выберете свой пол.
-    <select onchange="Accept()">
-      <option>Женщина</option>
-      <option>Мужчина</option>
-    </select>
+    <div id="Task3">
+      Выберете свой пол.
+      <select id="ChangeGenger" onchange="Accept()">
+        <option>Жен</option>
+        <option>Муж</option>
+      </select>
+    </div>
 
     <h1>Задание 4</h1>
-    <input oninput="ChangeResult()" id="FieldChange" type="text" size="27" />
+    <input oninput="ChangeResult()" id="FieldChange" type="text" size="31" />
     <div id="ChangeResult">Результат:</div>
 
     <h1>Задание 5</h1>

@@ -3,7 +3,12 @@ body {
   height: auto;
   background-attachment: fixed;
   background-size: cover;
-  background-color: aquamarine;
+  background-image: linear-gradient(to bottom, #dce35b, #45b649);
+}
+
+h1 {
+  font-size: 36px;
+  font-family: monospace;
 }
 
 #Dodge {
@@ -15,4 +20,75 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#buttons {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(
+    to right,
+    #a1ffce 0%,
+    #faffd1 51%,
+    #a1ffce 100%
+  );
+  background-size: 200% auto;
+  transition: 1s;
+}
+
+#buttons:hover {
+  background-position: right center;
+  font-size: 15px;
+}
+
+#FieldChange,
+#InputDate {
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#FieldInput {
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#Task3 {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  margin: 10px;
+}
+
+#ChangeGenger {
+  margin-left: 10px;
+  padding: 3px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+#ChangeResult {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 6px;
+}
+
+#Size {
+  padding: 3px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+#Dodge {
+  border-radius: 7px;
+  border: 1px solid black;
 }
