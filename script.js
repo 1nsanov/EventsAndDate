@@ -1,10 +1,15 @@
 function FindDaysBeforeHB() {
-	var inputData = prompt('Введите свою Дату рождения. (дд.мм.2022)')
+	var inputData = prompt('Введите свою Дату рождения. (дд.мм.2022)', '00.00.2022')
 	var patern = /(\d{2})\.(\d{2})\.(\d{4})/
 	var DateTime = new Date(inputData.replace(patern, '$3-$2-$1'))
-	var currentDate = new Date();
-	var days = Math.ceil((DateTime.getTime() - currentDate.getTime()) / 86400000)
-	alert('До вашего дня рождения осталось ' + days + ' д.');
+	if (DateTime < currentDate) {
+		alert('Некорректный ввод')
+	}
+	else {
+		var currentDate = new Date();
+		var days = Math.ceil((DateTime.getTime() - currentDate.getTime()) / 86400000)
+		alert('До вашего дня рождения осталось ' + days + ' д.');
+	}
 }
 
 function BlockInput() {
